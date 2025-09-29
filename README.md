@@ -55,7 +55,7 @@ Aplicaci√≥n: Crear un DisplayModeContext y un Provider que envuelva la aplicaci√
 ```jsx
 <TaskItem 
   id={string}
-  text={string}
+  content={string}
   completed={boolean}
   onComplete={function}
   onDelete={function}
