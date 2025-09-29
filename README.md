@@ -47,3 +47,17 @@ Aplicación: Usar useRef para obtener una referencia al elemento del DOM (<input
 ### Context:
 El Reto: La aplicación necesita un "modo de visualización" (compacto o detallado) que se pueda activar desde un interruptor en el encabezado. Este modo debe afectar el estilo de todas las tareas en la lista. Pasar la prop displayMode a cada componente a través de la jerarquía sería ineficiente.
 Aplicación: Crear un DisplayModeContext y un Provider que envuelva la aplicación. El componente TaskItem y cualquier otro componente que necesite saber el modo de visualización, lo consumirá directamente usando useContext.
+
+
+## 📐 Component Contracts
+
+### TaskItem
+```jsx
+<TaskItem 
+  id={string}
+  text={string}
+  completed={boolean}
+  onComplete={function}
+  onDelete={function}
+/>
+
