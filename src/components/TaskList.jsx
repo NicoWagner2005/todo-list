@@ -1,5 +1,5 @@
-import { use, useMemo, useState } from "react";
-import TaskItem from "./components/taskItem/TaskItem.jsx";
+import { useMemo, useState } from "react";
+import TaskItem from "./taskItem/TaskItem.jsx";
 
 export default function TaskList({ todos, onToggleComplete, onDelete }) {
   const [showHighOnly, setShowHighOnly] = useState(false);
