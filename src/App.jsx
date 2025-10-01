@@ -2,6 +2,7 @@ import { DisplayModeContext } from './context/DisplayModeContext'
 import { useState} from 'react'
 import './App.css'
 import Header from './components/Header'
+import TaskList from './components/TaskList'
 
 
 function App() {
@@ -9,6 +10,7 @@ function App() {
   return (
     <DisplayModeContext.Provider value={{displayMode, setDisplayMode}}>
       <Header />
+      <TaskList />
     </DisplayModeContext.Provider>
   )
 }

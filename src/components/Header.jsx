@@ -1,7 +1,7 @@
 import { DisplayModeContext } from "../context/DisplayModeContext";
 import { useContext } from "react";
 
-function Header() {
+export default function Header() {
 
     const {displayMode, setDisplayMode} = useContext(DisplayModeContext);
     
@@ -19,4 +19,3 @@ function Header() {
     );
 }
 
-export default Header;
